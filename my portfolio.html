@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:sans-serif;
+            background-color:rgb(116, 253, 116);
+            margin: 0;
+        }
+        header{
+            background-color:rgb(187, 187, 187);
+            text-align:center;
+            font-family:Arial, Helvetica, sans-serif
+            font-weight:bold;
+            border-radius:1px;
+            border:1px blue solid;
+        }
+        .navbar ul{
+            list-style-type:none;
+            display:flex;
+            gap:20px;
+            justify-content:center;
+        }
+        .navbar ul li{
+            display:inline;
+        }
+        .navbar ul li a{
+            text-decoration:none;
+            color:blue;
+            padding:2px 2px;
+            border-radius:15px;
+            font-size:larger;
+            background-color:white
+        }
+        .navbar ul li a:hover{
+            color:red;
+            background-color:cyan;
+        }
+        section{
+            padding:20px 20px;
+            border:5px orange solid;
+            margin:10px 10px;
+            box-shadow:1 6px 6px orange;
+            border-radius:10px;
+            max-width:auto;
+            text-align:center;
+            Background-color:rgb(30, 255, 0)
+        }
+        form{
+            display:flex;
+            flex-direction:column;
+            max-width:500px;
+            margin:0 auto;
+            gap: 10px;
+        }
+        form input,form textarea{
+            border:solid orange 1px;
+            border-radius:5px;
+        }
+        #btn{
+            color:red;
+            background-color:orange;
+            padding:10px;
+            border-radius:10px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+        #btn:hover{
+            background-color:yellow;
+        }
+        footer{
+            background-color:rgb(187, 187, 187);
+            text-align:center;
+            color:darkvolet;
+            border-top:5px orange solid;
+        }
+        .socials{
+            display:flex;
+            justify-content:center;
+            gap:15px;
+        }
+        .socials img{
+            width:30px;
+            height:auto;
+            border:3px solid red;
+            border-radius:15px;
+        }
+        @media(max-width:768px){
+            .navbar ul{
+                flex-direction:column;
+            }
+            body{
+                background-color:yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SAM'S PERSONAL PORTFOLIO</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">My Skills</a></li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about me">
+        <h2>About me</h2>
+        <p>hi! It is I, the Web Development Master!</p>
+    </section>
+        <!-- My skills section -->
+    <section id="my skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>Django</li>
+        </ul>
+    </section>
+    <section  id="welcome">
+        <h2>WELCOME</h2>
+        <h3>Welcome to my blog</h3>
+        <p>I am just someone seeking for a source of livelihood without any problems... or happiness maybe?</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>My Portfolio</h3>
+        <p>The Web Development course features a lot of extended modifications compared to the previous generations whch were not able to make it to the market.</p>
+        <p>As much as there may be many paragraphs, this does little effect on the vast memory capacity which is available and on demand</p>
+        <p>If you want to follow up on me just use the link provided below</p>    
+    </section>
+    <section id="Contact me">
+        <h3>Contact me</h3>
+        <form id="form">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="e-mail">E-MAIL:</label>
+            <input type="email" id="e-mail" name="e-mail">
+            <label for=message>MESSAGE:</label>
+            <textarea id="address" name="address" cols="40" rows="5" placeholder="Write your message here..."></textarea>
+            <button id="btn" type="submit">SUBMIT</button>
+        </form>
+            <h4>Follow me on</h4>
+            <ul>
+                <li>Phone:  0722222722</li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Github</a></li>
+            </ul>
+    </section> 
+    <footer>
+        <p>&copysammy_g </p>
+            <div class="socials">
+                <a href="https://www.linkedin.com"><img src="linkedIn.png"></a>
+                <a href="https://www.github.com"><img src="github.jpeg"></a>
+                <a href="https://www.apple.com"><img src="apple.png"></a>
+                <a href="https://www.instagram.com"><img src="Instagram_icon.png"></a>
+                <a href="https://www.x.com"><img src="x.png"></a>
+            </div>
+    </footer>
+</body>
+</html>
